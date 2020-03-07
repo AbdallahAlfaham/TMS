@@ -63,6 +63,8 @@ Now, you need to create a MySQL database, called "tms_db", so you should have My
 ```bash
 mysql -u root -p
 CREATE DATABASE tms_db CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci;
+USE tms_db;
+INSERT INTO `projects`(`name`) VALUES ("Management");
 ```
 
 Now, edit your .env config file, then run the following command ti migrate the database:
